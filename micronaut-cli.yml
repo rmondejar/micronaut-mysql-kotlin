@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: mnk.data.mysql
+testFramework: spock
+sourceLanguage: kotlin
+buildTool: gradle
+features: [annotation-api, app-name, data, data-jpa, flyway, graalvm, gradle, hibernate-jpa, http-client, jdbc-hikari, kotlin, kotlin-application, logback, mysql, netty-server, readme, shade, spock, testcontainers, yaml]
