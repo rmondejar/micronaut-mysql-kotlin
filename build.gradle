@@ -54,6 +54,7 @@ dependencies {
 application {
     mainClass.set("mnk.data.mysql.ApplicationKt")
 }
+
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
 }
@@ -69,6 +70,9 @@ tasks {
             jvmTarget = "11"
         }
     }
+}
 
-
+nativeImage {
+    args('--verbose')
+    imageName('mnk-data-mysql')
 }
