@@ -1,9 +1,7 @@
 package mnk.data.mysql.services
 
-import java.util.*
 import jakarta.inject.Inject
 import jakarta.inject.Singleton
-
 import mnk.data.mysql.domain.Author
 import mnk.data.mysql.dtos.AuthorDto
 import mnk.data.mysql.mappers.AuthorMapper
@@ -17,7 +15,7 @@ class AuthorService {
     lateinit var authorMapper: AuthorMapper
 
     fun findAll(): List<AuthorDto> {
-        val authorDtos: MutableList<AuthorDto> = ArrayList<AuthorDto>()
+        val authorDtos: MutableList<AuthorDto> = ArrayList()
         authorsRepository.findAll().forEach { author -> authorDtos.add(authorMapper.toDto(author)) }
         return authorDtos
     }

@@ -1,7 +1,6 @@
 package mnk.data.mysql.mappers
 
 import jakarta.inject.Singleton
-
 import mnk.data.mysql.domain.Author
 import mnk.data.mysql.dtos.AuthorDto
 
